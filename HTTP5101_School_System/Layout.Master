@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="HTTP5101_School_System.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>School System</title>
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+</head>
+<body>
+    <header>
+        <div class="cwidth">
+            Your Custom Header Here
+        </div>
+    </header>
+    <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <footer>
+        <div class="cwidth">
+            Your Custom Footer Here
+        </div>
+    </footer>
+</body>
+</html>
