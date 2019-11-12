@@ -10,8 +10,16 @@
 <body>
     <header>
         <div class="cwidth">
-            Hello Everyone!
+            Your Custom Header Here
         </div>
+        <nav>
+            <ul>
+                <li><a href="ListStudents.aspx">Students</a></li>
+                <li><a href="ListTeachers.aspx">Teachers</a></li>
+                <li><a href="ListClasses.aspx">Classes</a></li>
+                <li><a href="crudPage.aspx">CRUD</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="cwidth">
         <form id="form1" runat="server">
@@ -21,7 +29,7 @@
     </div>
     <footer>
         <div class="cwidth">
-             My Ultra Awesome Footer Here
+            Your Custom Footer Here
         </div>
     </footer>
 </body>

@@ -1,23 +1,62 @@
-﻿
-/*GENERAL CSS*/
-.cwidth{max-width:1080px; margin:0 auto;}
-header,footer{background:#b2b2b2;}
-header{margin-bottom:50px;}
-footer{margin-top:50px;}
+﻿/*GENERAL CSS*/
+.cwidth {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #b2b2b2;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
-#students_result {width:100%;}
-.listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
+#students_result {
+    width: 100%;
+}
 
-.listitem:after{clear:both;}
-.listitem:nth-child(2n){background:#dedede;}
-.listitem:hover {background: #e9d898;}
+.listitem {
+    background: #fefefe;
+    padding: 12px 5%;
+    width: 90%;
+    overflow: hidden;
+}
+
+    .listitem:after {
+        clear: both;
+    }
+
+    .listitem:nth-child(2n) {
+        background: #dedede;
+    }
+
+    .listitem:hover {
+        background: #e9d898;
+    }
 /*
     sandbox.bittsdevelopment.com/colcalc
     columns : 4
     gutter/column ratio : 0.2
 */
-.col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
-.col4last{margin-right:0%;}
+.col4, .col4last {
+    float: left;
+    width: 21.73%;
+    margin-right: 4.34%;
+}
 
+.col4last {
+    margin-right: 0%;
+}
+
+/*CSS for navigation*/
+li {
+    text-decoration: none;
+    display: inline-block;
+}

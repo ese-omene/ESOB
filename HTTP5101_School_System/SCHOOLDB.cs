@@ -21,10 +21,10 @@ namespace HTTP5101_School_System
         //boot up MAMP, open start page
         //info is right below the PHPmyAdmin link
         //THIS INFO IS FOR A PUBLIC DATABASE THAT I CREATED, IT HAS READ-ONLY ACCESS
-        private static string User { get { return "humber_student"; } }
-        private static string Password { get { return "humberisgreat123"; } }
-        private static string Database { get { return "humber_school"; } }
-        private static string Server { get { return "107.180.41.170"; } }
+        private static string User { get { return "root"; } }
+        private static string Password { get { return "root"; } }
+        private static string Database { get { return "school"; } }
+        private static string Server { get { return "localhost"; } }
         private static string Port { get { return "3306"; } }
 
         //ConnectionString is something that we use to connect to a database
