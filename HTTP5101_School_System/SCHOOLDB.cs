@@ -20,11 +20,11 @@ namespace HTTP5101_School_System
         //how do I know these?
         //boot up MAMP, open start page
         //info is right below the PHPmyAdmin link
-        private static string User { get { return "root"; } }
-        private static string Password { get { return "root"; } }
-        private static string Database { get { return "school"; } }
-        private static string Server { get { return "localhost"; } }
-        private static string Port { get { return "8889"; } }
+        private static string User { get { return "humber_student"; } }
+        private static string Password { get { return "humberisgreat123"; } }
+        private static string Database { get { return "humber_school"; } }
+        private static string Server { get { return "107.180.41.170"; } }
+        private static string Port { get { return "3306"; } }
 
         //ConnectionString is something that we use to connect to a database
         private static string ConnectionString {
@@ -64,7 +64,7 @@ namespace HTTP5101_School_System
             try
             {
                 Debug.WriteLine("Connection Initialized...");
-
+                Debug.WriteLine("Attempting to execute query"+query);
                 //open the db connection
                 Connect.Open();
                 //give the connection a query
@@ -81,7 +81,9 @@ namespace HTTP5101_School_System
                     for(int i = 0; i < resultset.FieldCount; i++)
                     {
                         Row.Add(resultset.GetName(i), resultset.GetString(i));
+                        
                     }
+                    
                     ResultSet.Add(Row);
                 }//end row
                 resultset.Close();
@@ -90,7 +92,7 @@ namespace HTTP5101_School_System
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("Something went wrong!");
+                Debug.WriteLine("Something went wrong in the List_Query method!");
                 Debug.WriteLine(ex.ToString());
                
             }
@@ -99,6 +101,56 @@ namespace HTTP5101_School_System
             Debug.WriteLine("Database Connection Terminated.");
 
             return ResultSet;
+        }
+
+
+        public Dictionary<String, String> FindStudent(int id)
+        {
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            Dictionary<String, String> student = new Dictionary<String, String>();
+
+            try
+            {
+                string query = "select * from STUDENTS where studentid = "+id;
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //give the connection a query
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+               
+                List<Dictionary<String, String>> Rows = new List<Dictionary<String, String>>();
+  
+                while (resultset.Read())
+                {
+                    Dictionary<String, String> Row = new Dictionary<String, String>();
+                        
+                    //for every column in the row
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of "+ resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Row.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    Rows.Add(Row);
+                }
+                
+                student = Rows[0]; //get the first student
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Something went wrong in the find Student method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return student;
         }
 
 

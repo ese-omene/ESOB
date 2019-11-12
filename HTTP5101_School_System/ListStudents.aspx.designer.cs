@@ -13,6 +13,24 @@ namespace HTTP5101_School_System {
     public partial class ListStudents {
         
         /// <summary>
+        /// student_search control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox student_search;
+        
+        /// <summary>
+        /// sql_debugger control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sql_debugger;
+        
+        /// <summary>
         /// students_result control.
         /// </summary>
         /// <remarks>

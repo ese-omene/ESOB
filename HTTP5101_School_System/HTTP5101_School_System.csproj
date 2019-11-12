@@ -142,6 +142,7 @@
     <Content Include="Layout.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListStudents.aspx" />
+    <Content Include="ListTeachers.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -170,6 +171,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ShowStudent.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -193,8 +195,22 @@
     <Compile Include="ListStudents.aspx.designer.cs">
       <DependentUpon>ListStudents.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListTeachers.aspx.cs">
+      <DependentUpon>ListTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListTeachers.aspx.designer.cs">
+      <DependentUpon>ListTeachers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCHOOLDB.cs" />
+    <Compile Include="ShowStudent.aspx.cs">
+      <DependentUpon>ShowStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowStudent.aspx.designer.cs">
+      <DependentUpon>ShowStudent.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

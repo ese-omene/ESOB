@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="cwidth">
-            Your Custom Header Here
+            Hello Everyone!
         </div>
     </header>
     <div class="cwidth">
@@ -21,7 +21,7 @@
     </div>
     <footer>
         <div class="cwidth">
-            Your Custom Footer Here
+             My Ultra Awesome Footer Here
         </div>
     </footer>
 </body>
