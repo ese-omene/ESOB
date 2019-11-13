@@ -21,19 +21,19 @@ namespace HTTP5101_School_System
                 teachers_result.InnerHtml += "<div class=\"listitem\">";
 
                 string teacherfirstname = row["TEACHERFNAME"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + teacherfirstname + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col5\">" + teacherfirstname + "</div>";
 
                 string teacherlastname = row["TEACHERLNAME"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + teacherlastname + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col5\">" + teacherlastname + "</div>";
 
                 string employeenumber = row["EMPLOYEENUMBER"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + employeenumber + "</div>";
-
-                string hiredate = row["HIREDATE"];
-                teachers_result.InnerHtml += "<div class=\"col4last\">" + hiredate + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col5\">" + employeenumber + "</div>";
 
                 string salary = row["SALARY"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + salary + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col5\">" + salary + "</div>";
+
+                string hiredate = row["HIREDATE"];
+                teachers_result.InnerHtml += "<div class=\"col5last\">" + hiredate + "</div>";
 
                 teachers_result.InnerHtml += "</div>";
 

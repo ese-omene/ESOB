@@ -4,11 +4,11 @@
     <h1>Teachers</h1>
     <div id="teachers_result" class="_table" runat="server">
         <div class="listitem">
-            <div class="col4">FIRST NAME</div>
-            <div class="col4">LAST NAME</div>
-            <div class="col4">EMPLOYEE NUMBER</div>
-            <div class="col4last">HIRE DATE</div>
-            <div class="col4">SALARY</div>
+            <div class="col5">FIRST NAME</div>
+            <div class="col5">LAST NAME</div>
+            <div class="col5">EMPLOYEE NUMBER</div>
+            <div class="col5">SALARY</div>
+            <div class="col5last">HIRE DATE</div>
         </div>
     </div>
     </asp:Content>

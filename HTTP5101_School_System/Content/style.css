@@ -22,6 +22,10 @@ footer {
     width: 100%;
 }
 
+#classes_result {
+    width: 100%;
+}
+
 .listitem {
     background: #fefefe;
     padding: 12px 5%;
@@ -45,6 +49,8 @@ footer {
     columns : 4
     gutter/column ratio : 0.2
 */
+
+
 .col4, .col4last {
     float: left;
     width: 21.73%;
@@ -52,6 +58,20 @@ footer {
 }
 
 .col4last {
+    margin-right: 0%;
+}
+
+
+/*
+Each column should be 17.48% wide with a gutter space of 3.14%
+*/
+.col5, .col5last {
+    width: 17.48%;
+    float: left;
+    margin-right: 3.14%;
+}
+
+.col5last {
     margin-right: 0%;
 }
 
