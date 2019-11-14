@@ -31,10 +31,16 @@ namespace HTTP5101_School_System
                 classes_result.InnerHtml += "<div class=\"col5\">" + teacher + "</div>";
 
                 string startdate = row["STARTDATE"];
-                classes_result.InnerHtml += "<div class=\"col5\">" + startdate + "</div>";
+                DateTime startdatetime = Convert.ToDateTime(startdate);
+                DateTime startdateonly = startdatetime.Date;
+                classes_result.InnerHtml += "<div class=\"col5last\">" + startdateonly.ToString("d") + "</div>";
 
                 string finishdate = row["FINISHDATE"];
-                classes_result.InnerHtml += "<div class=\"col5last\">" + finishdate + "</div>";
+                DateTime finishdatetime = Convert.ToDateTime(finishdate);
+                DateTime finishdateonly = finishdatetime.Date;
+                classes_result.InnerHtml += "<div class=\"col5last\">" + finishdateonly.ToString("d") + "</div>";
+                // SRC: HOW TO REMOVE TIME STAMP
+                // https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?redirectedfrom=MSDN&view=netframework-4.8#System_DateTime_Date
 
 
                 classes_result.InnerHtml += "</div>";

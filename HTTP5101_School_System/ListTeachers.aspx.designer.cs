@@ -15,6 +15,24 @@ namespace HTTP5101_School_System
     {
 
         /// <summary>
+        /// teacher_search control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox teacher_search;
+
+        /// <summary>
+        /// sql_debugger control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sql_debugger;
+
+        /// <summary>
         /// teachers_result control.
         /// </summary>
         /// <remarks>

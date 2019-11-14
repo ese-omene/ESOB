@@ -1,4 +1,10 @@
 ﻿/*GENERAL CSS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
 .cwidth {
     max-width: 1080px;
     margin: 0 auto;
@@ -18,11 +24,13 @@ footer {
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
-#students_result {
-    width: 100%;
+
+.searchbar {
+    padding-bottom: 0.75em;
+    float: right;
 }
 
-#classes_result {
+#students_result, classes_result, teacher_result {
     width: 100%;
 }
 
@@ -31,6 +39,16 @@ footer {
     padding: 12px 5%;
     width: 90%;
     overflow: hidden;
+}
+
+._table > div {
+    border-bottom: 2px solid black;
+    background: #a0a0a0;
+    text-align:center;
+}
+
+.tableheader {
+    font-weight: bold;
 }
 
     .listitem:after {
@@ -79,4 +97,6 @@ Each column should be 17.48% wide with a gutter space of 3.14%
 li {
     text-decoration: none;
     display: inline-block;
+    padding-right: 1em;
+    padding-bottom: 0.75em;
 }

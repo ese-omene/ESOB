@@ -42,13 +42,14 @@ namespace HTTP5101_School_System
                 query += " or STUDENTLNAME like '%"+searchkey+"%' ";
                 query += " or STUDENTNUMBER like '%"+searchkey+"%' ";
             }
-            sql_debugger.InnerHtml = query;
+            //sql_debugger.InnerHtml = query;
 
-            var db = new SCHOOLDB();
-            List<Dictionary<String,String>> rs = db.List_Query(query);
+            var db = new SCHOOLDB(); 
+            List<Dictionary<String,String>> rs = db.List_Query(query); 
+
             foreach(Dictionary<String,String> row in rs)
             {
-                students_result.InnerHtml += "<div class=\"listitem\">";
+                students_result.InnerHtml += "<div class=\"listitem\">"; 
 
                 string studentid = row["STUDENTID"];
 
@@ -62,7 +63,11 @@ namespace HTTP5101_School_System
                 students_result.InnerHtml += "<div class=\"col4\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<div class=\"col4last\">" + enrolmentdate + "</div>";
+                DateTime enrolmentdatetime = Convert.ToDateTime(enrolmentdate);
+                DateTime enrolmentdateonly = enrolmentdatetime.Date;
+                students_result.InnerHtml += "<div class=\"col5last\">" + enrolmentdateonly.ToString("d") + "</div>";
+                // SRC: HOW TO REMOVE TIME STAMP
+                // https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?redirectedfrom=MSDN&view=netframework-4.8#System_DateTime_Date
 
                 students_result.InnerHtml += "</div>";
             }
