@@ -22,7 +22,7 @@ namespace HTTP5101_School_System
         //info is right below the PHPmyAdmin link
         //THIS INFO IS FOR A PUBLIC DATABASE THAT I CREATED, IT HAS READ-ONLY ACCESS
         private static string User { get { return "root"; } }
-        private static string Password { get { return ""; } }
+        private static string Password { get { return "root"; } }
         private static string Database { get { return "school"; } }
         private static string Server { get { return "localhost"; } }
         private static string Port { get { return "3306"; } }
@@ -230,7 +230,6 @@ namespace HTTP5101_School_System
 
             return teacher;
         }
-
 
 
     }

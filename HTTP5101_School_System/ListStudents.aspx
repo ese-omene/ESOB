@@ -2,6 +2,28 @@
 
 <asp:Content ID="students_list" ContentPlaceHolderID="body" runat="server">
     <h1>Students</h1>
+       <div>
+            <asp:Label Text="First Name" runat="server"></asp:Label>
+           <asp:TextBox ID="txtFName" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Label Text="Last Name" runat="server"></asp:Label>
+            <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Label Text="Student Number" runat="server"></asp:Label>
+            <asp:TextBox ID="txtStdNumber" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Label Text="Enrollment Date" runat="server"></asp:Label>
+            <asp:TextBox ID="txtEnrollDate" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Button Text="Add" ID="btnAdd" runat="server" />
+            <asp:Button Text="Update" ID="btnUpdate" runat="server" />
+            <asp:Button Text="Delete" ID="btnDelete" runat="server" />
+       </div>
+      <br/ . />
     <div id="student_nav" class="searchbar">
         <asp:label for="student_search" runat="server">Search Students:</asp:label>
         <asp:TextBox ID="student_search" runat="server"></asp:TextBox>

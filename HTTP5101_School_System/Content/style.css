@@ -95,8 +95,27 @@ Each column should be 17.48% wide with a gutter space of 3.14%
 
 /*CSS for navigation*/
 li {
-    text-decoration: none;
     display: inline-block;
     padding-right: 1em;
     padding-bottom: 0.75em;
 }
+
+li a {
+    text-decoration:none;
+}
+nav {
+    float: right;
+}
+
+img {
+    width: 100px;
+    height:auto;
+     }
+footer {
+   margin: 10px;
+}
+footer p {
+    font-size: 18px;
+    text-align:center;
+}
+

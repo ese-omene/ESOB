@@ -29,9 +29,11 @@ namespace HTTP5101_School_System
 
             if (searchkey != "")
             {
-                query += " WHERE TEACHERFNAME like '%" + searchkey + "%' ";
-                query += " OR TEACHERLNAME like '%" + searchkey + "%' ";
-                query += " OR EMPLOYEENUMBER like '%" + searchkey + "%' "; 
+                query += " WHERE LOWER(TEACHERFNAME) like '%" + searchkey + "%' ";
+                query += " OR LOWER(TEACHERLNAME) like '%" + searchkey + "%' ";
+                query += " OR LOWER(EMPLOYEENUMBER) like '%" + searchkey + "%' "; 
+                query += " OR HIREDATE like '%" + searchkey + "%' "; 
+                query += " OR SALARY like '%" + searchkey + "%' "; 
             }
             // sql_debugger.InnerHtml = query;
             // COMMENT OUT THE ABOVE LINE AFTER DEBUGGING COMPLETE
@@ -77,5 +79,6 @@ namespace HTTP5101_School_System
             }
 
         }
+
     }
 }

@@ -7,11 +7,76 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HTTP5101_School_System {
-    
-    
-    public partial class ListStudents {
-        
+namespace HTTP5101_School_System
+{
+
+
+    public partial class ListStudents
+    {
+
+        /// <summary>
+        /// txtFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFName;
+
+        /// <summary>
+        /// txtLName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLName;
+
+        /// <summary>
+        /// txtStdNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStdNumber;
+
+        /// <summary>
+        /// txtEnrollDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEnrollDate;
+
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+
+        /// <summary>
+        /// btnUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
+
+        /// <summary>
+        /// btnDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDelete;
+
         /// <summary>
         /// student_search control.
         /// </summary>
@@ -20,7 +85,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox student_search;
-        
+
         /// <summary>
         /// sql_debugger control.
         /// </summary>
@@ -29,7 +94,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl sql_debugger;
-        
+
         /// <summary>
         /// students_result control.
         /// </summary>

@@ -51,13 +51,22 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox txtEnrollDate;
 
         /// <summary>
-        /// btnSave control.
+        /// btnAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+
+        /// <summary>
+        /// btnUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
 
         /// <summary>
         /// btnDelete control.
@@ -67,15 +76,6 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDelete;
-
-        /// <summary>
-        /// btnClear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnClear;
 
         /// <summary>
         /// lblSuccessMessage control.

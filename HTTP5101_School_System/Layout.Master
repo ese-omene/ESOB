@@ -10,16 +10,18 @@
 <body>
     <header>
         <div class="cwidth">
-            Team ESOB - Assignment 2
-        </div>
+            <img src="Content/logo.png" />
+         
         <nav>
             <ul>
                 <li><a href="ListStudents.aspx">Students</a></li>
                 <li><a href="ListTeachers.aspx">Teachers</a></li>
                 <li><a href="ListClasses.aspx">Classes</a></li>
-                <li><a href="crudPage.aspx">CRUD</a></li>
+              <!--  <li><a href="crudPage.aspx">CRUD</a></li>  independent page not needed -->
             </ul>
         </nav>
+
+       </div>     
     </header>
     <div class="cwidth">
         <form id="form1" runat="server">
@@ -29,7 +31,7 @@
     </div>
     <footer>
         <div class="cwidth">
-            Team ESOB - Assignment 2
+         <p>   Assignment 2 </p>
         </div>
     </footer>
 </body>

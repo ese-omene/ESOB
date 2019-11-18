@@ -15,8 +15,29 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // resets the result window
+            classes_result.InnerHtml = "";
+
+            string searchkey = "";
+            if (Page.IsPostBack)
+            {
+                searchkey = class_search.Text;
+
+            }
+
+            string query = "select * from CLASSES";
+
+            if (searchkey != "")
+            {
+                query += " WHERE LOWER(CLASSCODE) like '%" + searchkey + "%' ";
+                query += " or LOWER(CLASSNAME) like '%" + searchkey + "%' ";
+                query += " or LOWER(Teacher) like '%" + searchkey + "%' ";
+            }
+           
+
             var db = new SCHOOLDB();
             List<Dictionary<String, String>> rs = db.List_Query("select CLASSCODE, concat(teachers.teacherfname, ' ' , teachers.teacherlname) as 'Teacher', STARTDATE, FINISHDATE, CLASSNAME from classes join teachers on classes.TEACHERID = teachers.TEACHERID ");
+           
             foreach (Dictionary<String, String> row in rs)
             {
                 classes_result.InnerHtml += "<div class=\"listitem\">";

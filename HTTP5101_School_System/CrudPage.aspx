@@ -19,9 +19,9 @@
             <asp:TextBox ID="txtEnrollDate" runat="server"></asp:TextBox>
         </div>
         <div>
-            <asp:Button Text="Save" ID="btnSave" runat="server" />
+            <asp:Button Text="Add" ID="btnAdd" runat="server" />
+            <asp:Button Text="Update" ID="btnUpdate" runat="server" />
             <asp:Button Text="Delete" ID="btnDelete" runat="server" />
-            <asp:Button Text="Clear" ID="btnClear" runat="server" />
        </div>
         <div>
             <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green"></asp:Label>
