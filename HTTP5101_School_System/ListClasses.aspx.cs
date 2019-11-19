@@ -25,7 +25,7 @@ namespace HTTP5101_School_System
                 searchkey = class_search.Text;
             }
 
-            string query = "select CLASSCODE, concat(teachers.teacherfname, ' ', teachers.teacherlname) as TEACHERFULLNAME, STARTDATE, FINISHDATE, CLASSNAME from classes join teachers on classes.TEACHERID = teachers.TEACHERID ";
+            string query = "select CLASSCODE, concat(teachers.teacherfname, ' ', teachers.teacherlname) as TEACHERFULLNAME, STARTDATE, FINISHDATE, CLASSNAME, CLASSID from classes join teachers on classes.TEACHERID = teachers.TEACHERID ";
             //"select * from CLASSES LEFT JOIN TEACHERS ON classes.TEACHERID = teachers.TEACHERID )";
 
 
@@ -47,12 +47,11 @@ namespace HTTP5101_School_System
             {
                 classes_result.InnerHtml += "<div class=\"listitem\">";
 
-                // string classid = row["CLASSID"];
+                string classid = row["CLASSID"];
 
                 string classcode = row["CLASSCODE"];
-                classes_result.InnerHtml += "<div class=\"col7\">" + classcode + "</div>";
-
-                // classes_result.InnerHtml += "<div class=\"col7\"><a href=\"ShowClasses.aspx?classid="+classid+">" + classcode + "</a></div>";
+                //classes_result.InnerHtml += "<div class=\"col7\">" + classcode + "</div>";
+                classes_result.InnerHtml += "<div class=\"col7\"><a href=\"ShowClass.aspx?classid=" + classid+ "\">" + classcode + "</a></div>";
 
                 string classname = row["CLASSNAME"];
                 classes_result.InnerHtml += "<div class=\"col7\">" + classname + "</div>";
