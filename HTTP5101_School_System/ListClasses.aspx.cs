@@ -33,6 +33,8 @@ namespace HTTP5101_School_System
                 query += " WHERE LOWER(CLASSCODE) like '%" + searchkey + "%' ";
                 query += " OR LOWER(CLASSNAME) like '%" + searchkey + "%' ";
                 query += " OR LOWER(Concat(teachers.teacherfname, ' ', teachers.teacherlname)) like '%" + searchkey + "%' ";
+                query += " OR STARTDATE like '%" + searchkey + "%' ";
+                query += " OR FINISHDATE like '%" + searchkey + "%' ";
             }
 
             //sql_debugger.InnerHtml = query;
