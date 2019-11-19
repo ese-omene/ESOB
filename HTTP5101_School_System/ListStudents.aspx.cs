@@ -54,20 +54,24 @@ namespace HTTP5101_School_System
                 string studentid = row["STUDENTID"];
 
                 string studentfirstname = row["STUDENTFNAME"];
-                students_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
+                students_result.InnerHtml += "<div class=\"col6\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentlastname + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentlastname + "</div>";
 
                 string studentnumber = row["STUDENTNUMBER"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentnumber + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
                 DateTime enrolmentdatetime = Convert.ToDateTime(enrolmentdate);
                 DateTime enrolmentdateonly = enrolmentdatetime.Date;
-                students_result.InnerHtml += "<div class=\"col5last\">" + enrolmentdateonly.ToString("d") + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + enrolmentdateonly.ToString("d") + "</div>";
                 // SRC: HOW TO REMOVE TIME STAMP
                 // https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?redirectedfrom=MSDN&view=netframework-4.8#System_DateTime_Date
+
+                students_result.InnerHtml += "<div class=\"col6\"><div class=\"editbutton\">Edit</div></div>";
+
+                students_result.InnerHtml += "<div class=\"col6last\"><div class=\"deletebutton\">Delete</div></div>";
 
                 students_result.InnerHtml += "</div>";
             }

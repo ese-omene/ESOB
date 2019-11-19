@@ -55,24 +55,27 @@ namespace HTTP5101_School_System
                 string teacherid = row["TEACHERID"];
 
                 string teacherfirstname = row["TEACHERFNAME"];
-                teachers_result.InnerHtml += "<div class=\"col5\"><a href=\"ShowTeacher.aspx?teacherid="+teacherid+"\">" + teacherfirstname + "</a></div>";
+                teachers_result.InnerHtml += "<div class=\"col7\"><a href=\"ShowTeacher.aspx?teacherid="+teacherid+"\">" + teacherfirstname + "</a></div>";
 
                 string teacherlastname = row["TEACHERLNAME"];
-                teachers_result.InnerHtml += "<div class=\"col5\">" + teacherlastname + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col7\">" + teacherlastname + "</div>";
 
                 string employeenumber = row["EMPLOYEENUMBER"];
-                teachers_result.InnerHtml += "<div class=\"col5\">" + employeenumber + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col7\">" + employeenumber + "</div>";
 
                 string salary = row["SALARY"];
-                teachers_result.InnerHtml += "<div class=\"col5\">" + salary + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col7\">" + salary + "</div>";
 
                 string hiredate = row["HIREDATE"];
                 DateTime hiredatetime = Convert.ToDateTime(hiredate);
                 DateTime hiredateonly = hiredatetime.Date;
-                teachers_result.InnerHtml += "<div class=\"col5last\">" + hiredateonly.ToString("d") + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col7\">" + hiredateonly.ToString("d") + "</div>";
                 // SRC: HOW TO REMOVE TIME STAMP
                 // https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?redirectedfrom=MSDN&view=netframework-4.8#System_DateTime_Date
 
+                teachers_result.InnerHtml += "<div class=\"col7\"><div class=\"editbutton\">Edit</div></div>";
+
+                teachers_result.InnerHtml += "<div class=\"col7last\"><div class=\"deletebutton\">Delete</div></div>";
 
                 teachers_result.InnerHtml += "</div>";
 

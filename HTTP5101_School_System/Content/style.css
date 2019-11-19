@@ -8,6 +8,7 @@
 .cwidth {
     max-width: 1080px;
     margin: 0 auto;
+    font-size: 13px;
 }
 
 header, footer {
@@ -24,6 +25,9 @@ footer {
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
+.input_area{
+    padding: 0.15em;
+}
 
 .searchbar {
     padding-bottom: 0.75em;
@@ -62,6 +66,23 @@ footer {
     .listitem:hover {
         background: #e9d898;
     }
+
+    .editbutton {
+        border: solid green 1px;
+        background-color:green;
+        border-radius: 5px;
+        color: white;
+        width: 70%;
+    }
+
+    .deletebutton {
+        border: solid red 1px;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        width: 70%;
+    }
+
 /*
     sandbox.bittsdevelopment.com/colcalc
     columns : 4
@@ -93,6 +114,35 @@ Each column should be 17.48% wide with a gutter space of 3.14%
     margin-right: 0%;
 }
 
+
+/*
+Each column should be 14.49% wide with a gutter space of 2.6%
+*/
+.col6, .col6last {
+    width: 14.49%;
+    float: left;
+    margin-right: 2.6%;
+}
+
+.col6last {
+    margin-right: 0;
+}
+
+
+/*
+Each column should be 12.37% wide with a gutter space of 2.22%
+*/
+.col7, .col7last {
+    width: 12.75%;
+    float: left;
+    margin-right: 1%;
+}
+
+.col7last {
+    margin-right: 0;
+}
+
+
 /*CSS for navigation*/
 li {
     display: inline-block;
@@ -115,7 +165,7 @@ footer {
    margin: 10px;
 }
 footer p {
-    font-size: 18px;
+    font-size: 16px;
     text-align:center;
 }
 
