@@ -41,6 +41,7 @@ namespace HTTP5101_School_System
                 query += " WHERE LOWER(STUDENTFNAME) like '%"+searchkey+"%' ";
                 query += " or LOWER(STUDENTLNAME) like '%"+searchkey+"%' ";
                 query += " or LOWER(STUDENTNUMBER) like '%"+searchkey+"%' ";
+                query += " or ENROLMENTDATE like '%" + searchkey + "%' ";
             }
             //sql_debugger.InnerHtml = query;
 
