@@ -26,7 +26,6 @@ namespace HTTP5101_School_System
             }
 
             string query = "select CLASSCODE, concat(teachers.teacherfname, ' ', teachers.teacherlname) as TEACHERFULLNAME, STARTDATE, FINISHDATE, CLASSNAME, CLASSID from classes join teachers on classes.TEACHERID = teachers.TEACHERID ";
-            //"select * from CLASSES LEFT JOIN TEACHERS ON classes.TEACHERID = teachers.TEACHERID )";
 
 
             if (searchkey != "")

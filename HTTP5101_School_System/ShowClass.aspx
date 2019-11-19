@@ -6,6 +6,7 @@
         <h2>Details for <span id="class_title" runat="server"></span></h2>
         Class Code: <span id="class_code" runat="server"></span><br />
         Class Name: <span id="class_name" runat="server"></span><br />
+        Teacher: <span id="teacher_name" runat="server"></span><br />
         Start Date: <span id="class_start" runat="server"></span><br />
         End Date: <span id="class_finish" runat="server"></span><br />
     </div>

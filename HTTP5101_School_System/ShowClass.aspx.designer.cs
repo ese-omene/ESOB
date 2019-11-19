@@ -51,6 +51,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl class_name;
 
         /// <summary>
+        /// teacher_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_name;
+
+        /// <summary>
         /// class_start control.
         /// </summary>
         /// <remarks>
